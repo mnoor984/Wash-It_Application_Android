@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeleteAccountActivity">
+
+    <EditText
+        android:id="@+id/delete_account_username"
+        android:layout_width="326dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="171dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@+id/delete_account_password"
+        app:layout_constraintStart_toStartOf="@+id/delete_account_username" />
+
+    <EditText
+        android:id="@+id/delete_account_password"
+        android:layout_width="326dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <EditText
+        android:id="@+id/delete_account_confirmpassword"
+        android:layout_width="326dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/textView28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@+id/delete_account_confirmpassword"
+        app:layout_constraintStart_toStartOf="@+id/delete_account_password" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="confirm password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="@+id/delete_account_confirmpassword"
+        app:layout_constraintTop_toBottomOf="@+id/delete_account_confirmpassword" />
+
+    <Button
+        android:id="@+id/delete_act_button"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="84dp"
+        android:onClick="showAlertDialogButtonClicked"
+        android:text="Delete"
+        android:textColor="@color/black"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete_account_confirmpassword"
+        app:rippleColor="@color/cardview_dark_background" />
+</androidx.constraintlayout.widget.ConstraintLayout>

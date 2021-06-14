@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center_vertical"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <Button
+        android:id="@+id/main_my_ads"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/transparent"
+        android:onClick="viewMyAds"
+        android:text="my ads"
+        android:textColor="@color/black"
+        app:strokeColor="@color/black" />
+
+    <Button
+        android:id="@+id/profile_view_ads"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="viewAllAds"
+        android:text="view all ads"
+        android:textColor="@color/black"
+        app:strokeColor="@color/black"
+        android:backgroundTint="@color/transparent"/>
+
+    <Button
+        android:id="@+id/main_create_ad_btn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="createAd"
+        android:text="create an ad"
+        android:textColor="@color/black"
+        app:strokeColor="@color/black"
+        android:backgroundTint="@color/transparent"/>
+
+    <Button
+        android:id="@+id/main_modify_ad_btn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/transparent"
+        android:onClick="modifyAd"
+        android:text="modify an ad"
+        android:textColor="@color/black"
+        app:strokeColor="@color/black" />
+
+    <Button
+        android:id="@+id/main_modfy_registration_btn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/transparent"
+        android:onClick="modifyAccount"
+        android:text="modify account"
+        android:textColor="@color/black"
+        app:strokeColor="@color/black" />
+
+    <Button
+        android:id="@+id/main_delete_account_btn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/transparent"
+        android:onClick="deleteAccount"
+        android:text="delete account"
+        android:textColor="@color/black"
+        app:strokeColor="@color/black" />
+
+</LinearLayout>

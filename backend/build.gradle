@@ -1,0 +1,41 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.2'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'ca.mcgill.ecse428'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    runtimeOnly 'org.postgresql:postgresql'
+
+    //JWT
+    compile 'io.jsonwebtoken:jjwt-api:0.11.2'
+    runtime 'io.jsonwebtoken:jjwt-impl:0.11.2',
+            'io.jsonwebtoken:jjwt-jackson:0.11.2'
+
+    // cucumber.io dependencies
+    testCompile 'io.cucumber:cucumber-java:6.6.0'
+    testCompile 'io.cucumber:cucumber-junit:6.6.0'
+    testCompile 'io.cucumber:cucumber-spring:6.6.0'
+    testCompile 'io.cucumber:cucumber-junit-platform-engine:6.6.0'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    // junit
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.7.0'
+}
+
+
+test {
+    useJUnitPlatform()
+}

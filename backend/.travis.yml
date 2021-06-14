@@ -1,0 +1,18 @@
+branches:
+   only:
+   - master
+
+matrix:
+   include:
+
+      # For Backend tests
+
+      - language: java
+
+        before_install:
+           - chmod +x ./gradlew
+
+        script:
+           - ./gradlew build
+
+      # TODO Postman tests
